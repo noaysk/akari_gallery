@@ -1,0 +1,64 @@
+<div class="form">
+  {{#each images}}
+
+    <div class="ite">
+      <img src="{{img}}" alt="{{title}}" />
+      <form
+        method="post"
+        action="/menu/mealKits/update"
+        enctype="multipart/form-data">
+        <label for="title">title</label>
+        <input
+          type="text"
+          name="title"
+          id="title"
+          value="{{title}}"
+          readonly
+        /><br /><br />
+        {{#if validation.title}}
+          <span
+            style="color: red; font-size: 15px;"
+          >{{validation.title}}</span><br />
+        {{/if}}
+
+        <label for="description">description</label>
+        <textarea name="description" id="description">
+          {{description}}</textarea><br /><br />
+        {{#if validation.description}}
+          <span
+            style="color: red; font-size: 15px;"
+          >{{validation.description}}</span><br />
+        {{/if}}
+
+        <label for="image">image</label>
+        <input type="file" name="image" id="image" /><br /><br />
+
+        <input type="submit" value="Update" />
+      </form>
+
+    </div>
+  {{/each}}
+
+  <h1>create new Artworks</h1>
+  <form method="post" action="/menu/mealKits" enctype="multipart/form-data">
+    <label for="title">title</label>
+    <input type="text" name="title" id="title" /><br /><br />
+    {{#if validation.title}}
+      <span style="color: red; font-size: 15px;">{{validation.title}}</span><br
+      />
+    {{/if}}
+
+    <label for="description">description</label>
+    <textarea name="description" id="description"> </textarea><br /><br />
+    {{#if validation.description}}
+      <span
+        style="color: red; font-size: 15px;"
+      >{{validation.description}}</span><br />
+    {{/if}}
+
+    <label for="image">image</label>
+    <input type="file" name="image" id="image" /><br /><br />
+    <input type="submit" value="Create" />
+  </form>
+
+</div>

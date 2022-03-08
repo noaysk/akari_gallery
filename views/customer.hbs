@@ -1,0 +1,9 @@
+ {{>head}}   
+{{>header}}  
+<h1>this is the customer dashboard</h1>
+{{#if user}}
+    <dd>hello {{user.firstName}} {{user.lastName}}</dd>
+{{else}}
+    <dd>not logged in</dd>
+{{/if}}
+{{>footer}}

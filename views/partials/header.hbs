@@ -1,0 +1,23 @@
+<header class="navigation">
+  <div class="logo">
+    <a href="/home">
+      <img src="/static/images/logo1.png" />
+    </a>
+  </div>
+  <a href="/home">
+    <li class="header-nav-item select">Home</li>
+  </a>
+  <a href="/menu">
+    <li class="header-nav-item select">On The Menu</li>
+  </a>
+  <a  href="/about">
+    <li class="header-nav-item select">About</li>
+  </a>
+  {{#if user}}
+  <a href="/logout" class="header-button header-post">Logout</a>
+  <a href="/dashboard/{{user.role}}" class="header-button header-login">{{user.firstName}}'s Cart</a>
+  {{else}}
+  <a href="/login" class="header-button header-post">Login</a>
+  <a href="/signup" class="header-button header-login">Sign up</a>
+  {{/if}}
+</header>

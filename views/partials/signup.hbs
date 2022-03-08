@@ -1,0 +1,24 @@
+
+
+<form method="post" action="/signup">
+  <div class="form">
+    <form class="signup-form">
+
+      <label for="email">
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="email"
+          value="{{values.email}}"
+        />
+      </label>
+      {{#if validation.email}}
+        <span style="color: red;">{{validation.email}}</span><br />
+      {{/if}}
+
+      <input type="submit" value="submit" />
+
+    </form>
+  </div>
+</form>

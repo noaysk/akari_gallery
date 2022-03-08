@@ -1,0 +1,80 @@
+.top-meals {
+  display: flex;
+  flex-direction: row;
+}
+.meals {
+  width: 30%;
+}
+
+.wit {
+  color: rgb(126, 126, 126);
+  padding-bottom: 15px;
+}
+.wit1 {
+  color: rgb(126, 126, 126);
+  width: 150px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.wit2 {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.cont {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+}
+.ite {
+  width: 40%;
+  text-align: center;
+  position: relative;
+  margin: auto;
+}
+.ite img {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+.ite a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.boxContainer1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.boxContainer1 .box1 {
+  display: inline-block;
+  font-size: 16px;
+  
+}
+
+.name1 {
+  font-family: "Lucida Handwriting";
+  color: #027771;
+  font-size: 40px;
+  font-weight: 500;
+}
+.add-cart {
+  padding: 1em;
+}
+.add-cart-button {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  color: #333;
+  border: 1px #00b5ad solid;
+  border-radius: 3px;
+}

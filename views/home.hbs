@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>akari</title>
+    <link rel="stylesheet" href="/static/index.css">
+    {{>head}}   
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Spinnaker" />
+
+</head>
+
+<body>
+
+    <header>
+        <img src="/images/header.jpeg" alt="header">
+    </header>
+
+    <main>
+        <div class="header">
+            <a href="#home">All Photos</a>
+            <div class="header-right">
+                <a href="#home">Home</a>
+                <a href="#footer">About</a>
+            </div>
+        </div>
+        {{#each images}}
+        <div class="wrapper">
+            
+            <aside class="aside aside-1"><img src="{{img}}" alt="{{title}}"  height="300">
+            </aside>
+
+            <article class="main">
+                <div class="articleHeader">
+                    {{title}}                   
+                </div> 
+                <div class="articleDesc">           
+                <p>{{desc}}</p>
+                </div> 
+            </article>   
+                   
+        </div>
+        {{/each}}  
+        <footer id="footer">
+            <section class="primary">
+                <div class="flex">
+                    <div class="left">
+                        <p class="logo">follow me</p><br><br>
+
+                        <ul class="sns-navi">
+                            <li><a target="_blank" href="https://www.google.com"><img src="/images/facebook-app-symbol.png" alt="" height="30px" width="30px"></a></li>
+                            <li><a target="_blank" href="https://www.google.com"><img src="/images/instagram.png" alt="" height="30px" width="30px"></a></li>
+                            <li><a target="_blank" href="https://www.google.com"><img src="/images/youtube.png" alt="" height="30px" width="30px"></a></li>
+                        </ul>
+                        {{>signup}}
+                    </div>
+
+                    <div class="right">
+                        <div class="navi-section">
+                            <img src="/images/icon.jpeg"
+                                alt="Avatar" class="footer-avatar">
+                        </div>
+                        <div class="navi-section">
+                            <div class="myself">
+                                Akari Hase<br><br>
+                                長谷　あかり<br><br><br>
+                            </div>
+                                <div class="about-myself">Hello to all visitors!
+                                    Thank you all for visiting my gallery page.
+                                    My hobbies are physical crafts and digital design. 
+                                    I like creating things that make people smile. 
+                                    With this site I hope to show you a peek into my brain.
+                                     How many features can you find?Please let me know! Thank you for your time!
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </main>
+</body>
+
+</html>

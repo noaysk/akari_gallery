@@ -1,0 +1,40 @@
+ {{>head}}  
+<link rel="stylesheet" href="/static/login.css" />
+{{>header}}
+<form method="post" action="/login">    
+ <div class="form">
+     <div class="thumbnail"><img src="/static/images/girl.png"/></div>
+          <h1>{{form}}<h1>
+            {{#if validation.message}}
+            <span style="color: red; font-size: 15px;">{{validation.message}}</span><br/>
+            {{/if}}
+          <form class="login-form">
+            <label for="email">
+            <input type="text" id="email" name="email" placeholder="Email Address" value="{{values.email}}"/>
+            </label>
+            {{#if validation.email}}
+            <span style="color: red; font-size: 15px;">{{validation.email}}</span><br/>
+            {{/if}}
+            <label for="password">
+            <input type="password" id="password" name="password" placeholder="Password"  value="{{values.password}}"/>
+            </label>
+            {{#if validation.password}}
+            <span style="color: red; font-size: 15px;">{{validation.password}}</span><br/>
+            {{/if}}
+
+           <div class="check">
+              <input class="radio1" type="radio" name="role" id="customer" value="customer" checked>
+              <label class="radiolabel" for="message1">Customer</label>
+              <input class="radio1" type="radio" name="role" id="clerk" value="clerk">
+              <label class="radiolabel" for="message1">Data entry clerk</label>
+          </div>
+
+            <input type="submit" value="Log In" />
+
+            <p class="message">Not registered? <a href="signup" >Create an account</a></p>
+          </form>
+  </div>
+</form>  
+
+
+{{>footer}}

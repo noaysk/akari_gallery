@@ -1,0 +1,33 @@
+{{>head}}
+{{>header}}
+<form method="post" action="/order/meal-kit">
+
+    <h1>{{category}} style</h1>
+    <div class="cont">
+
+        <div class="ite">
+            <img src="{{image}}" alt="{{name}}">
+            <div class="boxContainer1">
+                <div class="box1">
+                    <div class="wit1">cooking time</div>
+                    <div class="wit2">{{cookingTime}}</div>
+                </div>
+                <div class="box1">
+                    <div class="wit1">servings</div>
+                    <div class="wit2">{{servings}}</div>
+                </div>
+                <div class="box1">
+                    <div class="wit1">calories</div>
+                    <div class="wit2">{{calories}}</div>
+                </div>
+            </div>
+            <div class="name1">{{title}}</div>
+            <div class="wit">{{description}}</div>
+            <input id="_id" name="_id" value="{{_id}}" hidden="true" />
+            <div class="add-cart">
+                <input type="submit" class="add-cart-button" value="Add to Cart: ${{price}}" />
+            </div>
+        </div>
+    </div>
+</form>
+{{>footer}}

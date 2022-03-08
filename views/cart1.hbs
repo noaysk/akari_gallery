@@ -1,0 +1,31 @@
+{{>head}}
+{{>header}}
+<div class="cart-body">
+    <div class="cart-container">
+        {{#each cart}}
+        <div class="cart-items">
+            <div class="image-box"><img src="{{mealKit.image}}" alt="{{name}}" /></div>
+            <h1 class="cart-title">{{mealKit.title}}</h1>
+            <div class="count">Quantity: {{qty}}</div>
+            <div class="amount">${{mealKit.price}}</div>
+        </div>
+        {{/each}}
+        <div class="checkout">
+            <div class="total">
+                <div>
+                    <div class="Subtotal">Sub-Total</div>
+                    <div class="items">{{totals.totalItem}}</div>
+                </div>
+                <div class="total-amount">${{totals.subTotal}}</div>
+            </div>
+            <form method="post" action="/order/checkout">
+                <input type="submit" class="button" value="Place your order" />
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+
+{{>footer}}

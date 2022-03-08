@@ -1,0 +1,15 @@
+<div class="mealpackage">
+{{#each mealKits}}
+    <h2 class="title">{{name}}</h2>
+    <div class="meal-items">
+    {{#each list}}
+        <div class="meals">
+            <img src="{{image}}" alt="{{name}}">
+            <div class="name">{{title}}</div>
+            <div class="with">{{included}}</div> 
+            <p>${{price}}</p> 
+        </div>
+    {{/each}}
+    </div>
+{{/each}}
+</div>

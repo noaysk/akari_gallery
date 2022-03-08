@@ -1,0 +1,46 @@
+/*contents*/
+.width-80 {
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    margin: auto;
+}
+.title {
+    text-align: center;
+    font-size: 40px;
+    color: #2d0010;
+    margin: 50px 0 50px;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+.flex-item {
+    width: 20%;
+    text-align: center;
+}
+.flex-item img {
+    display: block;
+    width: 140px;
+    margin: 0 auto;
+}
+/*Top Meal*/
+.meal-items {
+    display: flex;
+    justify-content: center;
+}
+.meals img {
+    display: block;
+    margin:20px;
+    width: 340px;
+    
+}
+.name{
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+height: 30px;
+overflow: auto;
+}
+.with{
+    color:rgb(126, 126, 126)
+}

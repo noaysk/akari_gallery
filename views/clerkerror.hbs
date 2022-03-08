@@ -1,0 +1,31 @@
+{{>head}}
+{{>header}}
+<h1>clerk error </h1><div class="ite">
+{{#if validation.title}}
+<span style="color: red; font-size: 15px;">{{validation.title}}</span><br />
+{{/if}}
+{{#if validation.included}}
+<span style="color: red; font-size: 15px;">{{validation.included}}</span><br />
+{{/if}}
+{{#if validation.description}}
+<span style="color: red; font-size: 15px;">{{validation.description}}</span><br />
+{{/if}}
+{{#if validation.price}}
+<span style="color: red; font-size: 15px;">{{validation.price}}</span><br />
+{{/if}}
+{{#if validation.cookingTime}}
+<span style="color: red; font-size: 15px;">{{validation.cookingTime}}</span><br />
+{{/if}}
+{{#if validation.servings}}
+<span style="color: red; font-size: 15px;">{{validation.servings}}</span><br />
+{{/if}}
+{{#if validation.calories}}
+<span style="color: red; font-size: 15px;">{{validation.calories}}</span><br />
+{{/if}}
+{{#if validation.isTopMeal}}
+<span style="color: red; font-size: 15px;">{{validation.isTopMeal}}</span><br />
+{{/if}}
+{{#if validation.category}}
+<span style="color: red; font-size: 15px;">{{validation.category}}</span><br />
+{{/if}}</div>
+{{>footer}}

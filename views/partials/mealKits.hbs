@@ -1,0 +1,15 @@
+
+{{#each mealKits}}
+    <h1>{{name}}</h1>
+    <div class="cont">
+    {{#each list}}
+        <div class="ite">
+            <a href="/menu/meal-kit/{{_id}}"><img src="{{image}}" alt="{{name}}">
+            <div class="name">{{title}}</div>
+            <div class="wit">{{included}}</div> </a> 
+            </form>
+            
+        </div>
+    {{/each}}
+    </div>
+{{/each}}

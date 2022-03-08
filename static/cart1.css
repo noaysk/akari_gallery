@@ -1,0 +1,124 @@
+.cart-body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #4cb1ad, #bdfaf7);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.cart-container {
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  width: 70%;
+  height: 85%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 25px 40px #1687d933;
+}
+
+.checkout {
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+  align-items: center;
+}
+
+.total {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-items {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+}
+.image-box {
+  margin-right: 10px;
+  width: 66px;
+}
+
+.cart-title {
+  max-width: 300px;
+  word-wrap: break-word;
+}
+
+.count {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 900;
+  color: #202020;
+}
+.amount {
+  list-style: none;
+  margin: 0;
+  padding-top: 20px;
+  font-size: 26px;
+  font-weight: 800;
+  color: #202020;
+}
+
+.Subtotal {
+  font-size: 22px;
+  font-weight: 700;
+  color: #202020;
+}
+.items {
+  font-size: 16px;
+  font-weight: 500;
+  color: #909090;
+  line-height: 10px;
+}
+.total-amount {
+  font-size: 36px;
+  font-weight: 900;
+  color: #202020;
+}
+.button {
+  margin-top: 5px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: linear-gradient(to bottom right, #4cb1ad, #67f8f0);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #202020;
+}
+
+@media all and (max-width: 800px) {
+  .cart-container {
+    justify-content: space-around;
+  }
+  .cart-items {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .cart-container {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .cart-items {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .cart-container a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
