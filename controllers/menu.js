@@ -44,6 +44,7 @@ menuRoutes.post("/mealKits", function (req, res) {
             mealKitsModel.findOne({ title: mealKit.title })
                 .then(mealKitFound => {
                     if (mealKitFound) {
+                        //TODO This causes the whole site to go down if a new post with the same title as an old post submit
                         validation.title = "title already exists.";
                         res.render(req.session.user.role, {
                             validation
@@ -156,6 +157,7 @@ function validateMealKit(mealKit, validation) {
     if (mealKit.file != null) {
         if (mealKit.file.mimetype === 'image/jpeg' ||
             mealKit.file.mimetype === 'image/png' ||
+            mealKit.file.mimetype === 'image/mp4' ||
             mealKit.file.mimetype === 'image/gif') {
         } else {
             validation.passed = false;
