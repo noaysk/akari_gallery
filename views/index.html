@@ -1,131 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="/static/header.css" />
-        <link rel="stylesheet" href="/static/index.css" />
-        <link rel="stylesheet" href="/static/contents.css" />
-        <link rel="stylesheet" href="/static/footer.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-   
-    <body>
-    </head>
-    <body>
-        <header class="header-5">
-            <div class="header-inner">
-              <div class="logo">
-                  <a href="/views/index.html">
-                <img src="/static/images/logo1.png" />
-                </a>              
-              </div>
-              <nav class="header-nav">
-                <ul class="header-nav-list">
-                  <a href="index.html"><li class="header-nav-item select">Home</li></a>
-                  <a href="menu.html"><li class="header-nav-item select">On The Menu</li></a>
-                  <a href="about.html"><li class="header-nav-item select">About</li></a>
-                  <div class="header-nav-item">
-                    <a href="login.html" class="header-button header-post">Login</a>
-                  </div>
-                  <div class="header-nav-item">
-                    <a href="/signup" class="header-button header-login">Sign up</a>
-                  </div>
-                </ul>              
-              </nav>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>akari</title>
+    <link rel="stylesheet" href="/static/index.css">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="/images/header.jpeg" alt="header">
+    </header>
+
+    <main>
+
+        <div class="header">
+            <a href="#home">All Photos</a>
+            <div class="header-right">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
             </div>
-          </header>
-        <div class="hero">
-            <h2>Eat Better, Save Time</h2>
-        </div>
-    
-        <div class="contents width-80">
-            <h2 class="title">How it works</h2>
-            <div class="flex-container">
-                <div class="flex-item">
-                    <img src="/static/images/recipes.jpg" alt="recipes">
-                    <h3>original recipes</h3>
-                    <p>Tasty and Nutritious</p>
-                </div>
-                <div class="flex-item">
-                    <img src="/static/images/restaurant.jpg" alt="restaurant">
-                    <h3>Your restaurant, delivered</h3>
-                    <p>Add your restaurant</p>
-                </div>
-                <div class="flex-item">
-                    <img src="/static/images/delivery.jpg" alt="Delivery">
-                    <h3>Delivery</h3>
-                    <p>Door to door</p>
-                </div>
-                <div class="flex-item">
-                    <img src="/static/images/eat.jpg" alt="Eat">
-                    <h3>Eat</h3>
-                    <p>Microwave or Oven, No Cleaning Up</p>
-                </div>
-            </div> 
         </div>
 
-        <div class="mealpackage">
-            <h2 class="title">Top Meal</h2>
-            <div class="meal-items">
-                <div class="meals">
-                    <img src="/static/images/pizza.jpg" alt="pizza">
-                    <div class="name">Cheesy Pepperoni Pizza Pull</div>
-                    <div class="with">Tomato, Cheese and Pepperoni</div>
-                    <p>$15.99</p>
-                </div>
-                <div class="meals">
-                    <img src="/static/images/sushi.jpg" alt="sushi">
-                    <div class="name">Special sushi presentation</div>
-                    <div class="with">Fish and Rice</div>
-                    <p>$18.99</p>
-                </div>
-                <div class="meals">
-                    <img src="/static/images/chinese.jpg" alt="chinese">
-                    <div class="name">A Variety of Chinese dumpling</div>
-                    <div class="with">Shrimp and Pork </div>
-                    <p>$8.99</p>
-                </div>
-                <div class="meals">
-                    <img src="/static/images/tacos.jpg" alt="tacos">
-                    <div class="name">Jarritos Tamarind and Tacos</div>
-                    <div class="with">Tomato, cheese and Beef</div>
-                    <p>$6.99</p>
-                </div>
-            </div>
-        </div>
-        <div class="footer-dark">
-            <footer>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-3 item">
-                            <h3>Services</h3>
-                            <ul>
-                                <li><a href="#">Affiliates</a></li>
-                                <li><a href="#">Gift Card</a></li>
-                                <li><a href="#">First Responders</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 col-md-3 item">
-                            <h3>Help & Support</h3>
-                            <ul>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 item text">
-                            <h3>Our Menu</h3>
-                            <ul>
-                                <li><a href="#">All Journeys</a></li>
-                                <li><a href="#">Grocery</a></li>
-                            </ul>
-                        </div>
-                        <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+
+        <video width="320" height="240" controls>
+            <source src="/images/4.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+          </video> 
+
+          
+
+        <footer id="footer">
+            <section class="primary">
+                <div class="flex">
+                    <div class="left">
+                        <p class="logo">Comment me</p><br><br>
+
+                        <ul class="sns-navi">
+                            <li><a target="_blank" href="https://www.linkedin.com/in/akarihase0901/"><img src="/images/linkedin.png" alt="" height="30px" width="30px"></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/ari_plates.byakari/"><img src="/images/instagram.png" alt="" height="30px" width="30px"></a></li>
+                        </ul>
+                        {{>signup}}
                     </div>
-                    <p class="copyright">Copyright © Fall 2021, Noa Yasukagawa, WEB322 ZAA</p>
-                </div>
-            </footer>
-        </div>
-    
 
-        <script type="text/javascript" src="/index.js"></script>
-    </body>
+                    <div class="right">
+                        <div class="navi-section">
+                            <img src="/images/icon.jpeg"
+                                alt="Avatar" class="footer-avatar">
+                        </div>
+                        
+                            <div class="myself">
+                                Akari Hase<br><br>
+                                長谷　あかり<br><br><br>
+                           
+                                <div class="about-myself">Hello to all visitors!<br>
+                                    Thank you all for visiting my gallery page.<br>
+                                    My hobbies are physical crafts and digital design.<br> 
+                                    I like creating things that make people smile. <br>
+                                    With this site I hope to show you a peek into my brain.<br>
+                                     How many features can you find?Please let me know! Thank you for your time!<br>
+                                </div>
+                         </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </main>
+</body>
+
 </html>
