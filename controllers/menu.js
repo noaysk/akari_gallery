@@ -32,7 +32,7 @@ menuRoutes.get("/meal-kit/:uid", function (req, res) {
     })
 });
 
-
+//create new post
 menuRoutes.post("/mealKits", function (req, res) {
     let mealKit = req.body;
     if (req.files != null) {
