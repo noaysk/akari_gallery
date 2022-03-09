@@ -3,7 +3,6 @@
 }
 
 body {
-
   margin: 0;
   font-family: Spinnaker;
 }
@@ -16,9 +15,8 @@ p {
   justify-content: space-between;
 }
 
-main{
-    background: gold;
-
+main {
+  background: gold;
 }
 header {
   height: 500px;
@@ -57,60 +55,52 @@ header img {
   float: right;
 }
 
-
 .wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    font-weight: bold;
-    text-align: center;
-    border: 1px solid #dbdbdb;
-    margin: 1% 5%;
-    color: white;
-
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #dbdbdb;
+  margin: 1% 5%;
+  color: white;
 }
-.wrapper>* {
-    padding: 10px;
-    flex: 1 100%;
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
 }
-
-
 
 .main {
-    text-align: left;
+  text-align: left;
 }
 
 .aside-1 {
-    background: gold;
+  background: gold;
 }
 
-
-.articleHeader{
+.articleHeader {
   font-size: 25px;
 }
-.articleDesc{
+.articleDesc {
   font-size: 20px;
-
 }
 @media all and (min-width: 600px) {
-    .aside {
-        flex: 1 0 0;
-    }
+  .aside {
+    flex: 1 0 0;
+  }
 }
 
 @media all and (min-width: 800px) {
-    .main {
-        flex: 3 0px;
-    }
+  .main {
+    flex: 3 0px;
+  }
 
-    .aside-1 {
-        order: 1;
-    }
+  .aside-1 {
+    order: 1;
+  }
 
-    .main {
-        order: 2;
-    }
-
-   
+  .main {
+    order: 2;
+  }
 }
 @media screen and (max-width: 600px) {
   header {
@@ -133,119 +123,116 @@ header img {
   }
 }
 
-
 #footer {
-    position: relative;
-    color: #fff;
-    background-color: gold;
-    padding: 3% 7%;
+  position: relative;
+  color: #fff;
+  background-color: gold;
+  padding: 3% 5%;
+}
+#footer a {
+  text-decoration: none;
+  color: #fff;
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+
+#footer .primary .flex {
+  display: flex;
+}
+#footer .primary .flex .left {
+  width: 40%;
+}
+#footer .primary .flex .right {
+  display: flex;
+  width: 60%;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 767px) {
+  #footer .primary {
+    padding: 20px 20px;
   }
-  #footer a {
-    text-decoration: none;
-    color: #fff;
-  }
-  #footer a:hover {
-    text-decoration: underline;
-  }
-  
   #footer .primary .flex {
-    display: flex;
+    display: block;
   }
   #footer .primary .flex .left {
-    width: 50%;
+    width: 100%;
   }
   #footer .primary .flex .right {
-    display: flex;
-    width: 40%;
-    justify-content: flex-end;
-  }
-  
-  @media screen and (max-width: 767px) {
-    #footer .primary {
-      padding: 20px 20px;
-    }
-    #footer .primary .flex {
-      display: block;
-    }
-    #footer .primary .flex .left {
-      width: 100%;
-    }
-    #footer .primary .flex .right {
-      width: 100%;
-      display: block;
-    }
-  }
-  
-  /* logo */
-  
-  #footer .logo {
-    position: relative;
-    padding: 0;
-    margin: 0;
     width: 100%;
-    font-size: 50px;
-    font-weight: bold;
+    display: block;
   }
-  
-  /* navi */
-  
-  .navi-section {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-    margin-left: 20px;
-    padding: 20px;
-  }
-  
-  #footer .sns-navi li {
-    display: inline-block;
-    margin: 0 20px 0 0;
-    padding: 0;
-    font-size: 20px;
-  }
-  .footer-avatar {
-    vertical-align: middle;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-  }
-  .myself {
-    font-size: 50px;
-    width: 500px;
-  }
-  .about-myself{
-    font-size: 30px;
-    width: 500px;
+}
 
-  }
-  
-  /* input */
-  input[type=text], select {
-    width: 40%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    
-  }
-  
-  input[type=submit] {
-    width: 20%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
- 
-input{
-  filter: sepia(100%) saturate(400%) grayscale(0) ;
+/* logo */
+
+#footer .logo {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* navi */
+
+.navi-section {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-right: 5%;
+}
+
+#footer .sns-navi li {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  padding: 0;
+  font-size: 20px;
+}
+.footer-avatar {
+  vertical-align: middle;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.myself {
+  font-size: 50px;
+  width: 100%;
+  margin-left: 1%;
+}
+.about-myself {
+  font-size: 30px;
+}
+
+/* input */
+input[type="text"],
+select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 20%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input {
+  filter: sepia(100%) saturate(400%) grayscale(0);
 }
