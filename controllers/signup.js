@@ -26,7 +26,7 @@ router.post("/", (req, res) => {
         validation.email = "Please enter a valid email address."
     }
     
-    if (passed) {
+    
         if(email=="akari"){
             validation.email = "akari";
             mealKitsModel.find({}).lean().exec()
@@ -72,13 +72,8 @@ router.post("/", (req, res) => {
                     });
                 }
             })
-    }
-    else {
-        res.render("home", {
-            values: req.body,
-            validation
-        });
-    }
+    
+   
 
   
 });
